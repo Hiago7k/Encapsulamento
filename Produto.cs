@@ -32,4 +32,12 @@ public class Produto
     {
         return nome;
     }
+
+    public void AlterarImagem(string imagem)
+    {
+        if (imagem.Length > 0) // verificando antes de alterar
+        {
+            this.imagem = imagem; // alterando atributo
+        }
+    }
 }
