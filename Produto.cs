@@ -6,13 +6,15 @@ public class Produto
     private string descricao;
     private decimal preco;
     private int estoque;
+    private string imagem;
 
-    public Produto(string nome, string descricao, decimal preco, int estoque)
+    public Produto(string nome, string descricao, decimal preco, int estoque, string imagem)
     { 
         this.nome = nome;
         this.descricao = descricao;
         this.preco = preco;
         this.estoque = estoque;
+        this.imagem = imagem;
     }
 
 
