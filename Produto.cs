@@ -7,13 +7,21 @@ public class Produto
     private decimal preco;
     private int estoque;
 
-    public void CriarProduto(string nome, string descricao, decimal preco, int estoque)
-    {
+    public Produto(string nome, string descricao, decimal preco, int estoque)
+    { 
         this.nome = nome;
         this.descricao = descricao;
         this.preco = preco;
         this.estoque = estoque;
     }
+
+    //public void CriarProduto(string nome, string descricao, decimal preco, int estoque)
+    //{
+    //    this.nome = nome;
+    //    this.descricao = descricao;
+    //    this.preco = preco;
+    //    this.estoque = estoque;
+    //}
 
     internal bool EstaDisponivel()
     {
