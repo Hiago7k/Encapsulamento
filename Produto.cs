@@ -7,7 +7,6 @@ public class Produto
     public string Descricao { get; }
     public decimal Preco { get; private set; }
     public int Estoque { get; }
-    public string Imagem { get; }
 
     public Produto(string nome, string descricao, decimal preco, int estoque, string imagem)
     { 
@@ -15,7 +14,7 @@ public class Produto
         this.Descricao = descricao;
         this.Preco = preco;
         this.Estoque = estoque;
-        this.imagem = imagem;
+        this.Imagem = imagem;
     }
 
 
@@ -28,28 +27,7 @@ public class Produto
     {
         Preco = Preco * (1 - desconto / 100);
     }
-
-
-    // Acesso a Dados GET
-    public string GetNome()
-    {
-        return Nome;
-    }
-
-    public string GetImagem()
-    {
-        return imagem;
-    }
-
-    // Alteracao de Dados SET
-    public void SetImagem(string imagem)
-    {
-        if (imagem.Length > 0) // verificando antes de alterar
-        {
-            this.imagem = imagem; // alterando atributo
-        }
-    }
-
+  
     public string Imagem
     {
         get 
