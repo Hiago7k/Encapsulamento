@@ -2,19 +2,19 @@
 
 public class Produto
 {
-    private string nome;
-    private string descricao;
-    private decimal preco;
-    private int estoque;
-    private string imagem;
+    public string Nome { get;}
+    public string Descricao { get; }
+    public decimal Preco { get; }
+    public int Estoque { get; }
+    public string Imagem { get; }
 
     public Produto(string nome, string descricao, decimal preco, int estoque, string imagem)
     { 
-        this.nome = nome;
-        this.descricao = descricao;
-        this.preco = preco;
-        this.estoque = estoque;
-        this.imagem = imagem;
+        this.Nome = nome;
+        this.Descricao = descricao;
+        this.Preco = preco;
+        this.Estoque = estoque;
+        this.Imagem = imagem;
     }
 
 
