@@ -2,10 +2,10 @@
 
 internal class Produto
 {
-    public string nome;
-    public string descricao;
-    public decimal preco;
-    public int estoque;
+    private string nome;
+    private string descricao;
+    private decimal preco;
+    private int estoque;
 
     public bool EstaDisponivel()
     {
