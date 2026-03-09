@@ -48,4 +48,19 @@ public class Produto
             this.imagem = imagem; // alterando atributo
         }
     }
+
+    public string Imagem
+    {
+        get 
+        {
+            return imagem;
+        }
+        set 
+        {
+            if (value.Length > 0)
+            {
+                this.imagem = value;
+            }
+        }
+    }
 }
