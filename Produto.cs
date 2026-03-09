@@ -2,9 +2,10 @@
 
 public class Produto
 {
+    private string imagem;
     public string Nome { get;}
     public string Descricao { get; }
-    public decimal Preco { get; }
+    public decimal Preco { get; private set; }
     public int Estoque { get; }
     public string Imagem { get; }
 
@@ -14,25 +15,25 @@ public class Produto
         this.Descricao = descricao;
         this.Preco = preco;
         this.Estoque = estoque;
-        this.Imagem = imagem;
+        this.imagem = imagem;
     }
 
 
     internal bool EstaDisponivel()
     {
-        return estoque > 0;
+        return Estoque > 0;
     }
 
     public void AlterarPrecoComDesconto(decimal desconto)
     {
-        preco = preco * (1 - desconto / 100);
+        Preco = Preco * (1 - desconto / 100);
     }
 
 
     // Acesso a Dados GET
     public string GetNome()
     {
-        return nome;
+        return Nome;
     }
 
     public string GetImagem()
