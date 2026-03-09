@@ -28,12 +28,20 @@ public class Produto
         preco = preco * (1 - desconto / 100);
     }
 
-    public string ObterNome()
+
+    // Acesso a Dados GET
+    public string GetNome()
     {
         return nome;
     }
 
-    public void AlterarImagem(string imagem)
+    public string GetImagem()
+    {
+        return imagem;
+    }
+
+    // Alteracao de Dados SET
+    public void SetImagem(string imagem)
     {
         if (imagem.Length > 0) // verificando antes de alterar
         {
