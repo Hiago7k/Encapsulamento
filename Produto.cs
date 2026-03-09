@@ -15,13 +15,6 @@ public class Produto
         this.estoque = estoque;
     }
 
-    //public void CriarProduto(string nome, string descricao, decimal preco, int estoque)
-    //{
-    //    this.nome = nome;
-    //    this.descricao = descricao;
-    //    this.preco = preco;
-    //    this.estoque = estoque;
-    //}
 
     internal bool EstaDisponivel()
     {
@@ -31,5 +24,10 @@ public class Produto
     public void AlterarPrecoComDesconto(decimal desconto)
     {
         preco = preco * (1 - desconto / 100);
+    }
+
+    public string ObterNome()
+    {
+        return nome;
     }
 }
