@@ -1,6 +1,6 @@
 ﻿namespace Encapsulamento;
 
-internal class Produto
+public class Produto
 {
     private string nome;
     private string descricao;
